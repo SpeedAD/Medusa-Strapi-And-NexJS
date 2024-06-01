@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.meta-fields"
+    },
+    "articleSchema": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "description": {
+      "type": "text"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "inversedBy": "articles"
+    },
+    "blog_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-category.blog-category",
+      "inversedBy": "articles"
+    },
+    "isVideo": {
+      "type": "boolean"
+    },
+    "videoBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "molecules.content",
+        "molecules.instagram-feed",
+        "molecules.quote",
+        "molecules.twitter-feed",
+        "molecules.video"
+      ]
+    },
+    "featuredImageMob": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "featuredImageBlock": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

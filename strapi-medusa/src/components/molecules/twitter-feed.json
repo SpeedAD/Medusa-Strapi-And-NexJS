@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_molecules_twitter_feeds",
+  "info": {
+    "displayName": "twitter_feed",
+    "icon": "th-list"
+  },
+  "options": {},
+  "attributes": {
+    "twitter": {
+      "type": "richtext"
+    }
+  }
+}

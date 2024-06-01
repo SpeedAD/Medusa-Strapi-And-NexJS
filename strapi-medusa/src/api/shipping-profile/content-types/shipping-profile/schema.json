@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipping_profiles",
+  "info": {
+    "singularName": "shipping-profile",
+    "pluralName": "shipping-profiles",
+    "displayName": "Shipping Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "medusa_id": {
+      "type": "uid",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "gift_card",
+        "custom"
+      ],
+      "required": true,
+      "default": "default"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "shipping_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shipping-option.shipping-option",
+      "mappedBy": "shipping_profile"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "shipping_profile"
+    }
+  }
+}

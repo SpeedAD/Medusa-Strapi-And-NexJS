@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_seo_meta_fields",
+  "info": {
+    "displayName": "Meta Fields",
+    "icon": "globe-africa",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDiscription": {
+      "type": "text"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "breadCrumbSchema": {
+      "type": "json"
+    },
+    "siteNavigationSchema": {
+      "type": "json"
+    },
+    "webPageSchema": {
+      "type": "json"
+    },
+    "organisationSchema": {
+      "type": "json"
+    },
+    "faqSchema": {
+      "type": "json"
+    },
+    "financialProductSchema": {
+      "type": "json"
+    }
+  }
+}

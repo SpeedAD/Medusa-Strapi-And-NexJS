@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_molecules_article",
+    "info": {
+      "displayName": "Article",
+      "icon": "heading",
+      "description": ""
+    },
+    "options": {},
+    "attributes": {
+      "title": {
+        "type": "text"
+      },
+      "description": {
+        "type": "richtext"
+      },
+      "button": {
+        "type": "component",
+        "repeatable": false,
+        "component": "atoms.link"
+      },
+      "subtitle": {
+        "type": "string"
+      },
+      "article": {
+        "type": "relation",
+        "relation": "oneToMany",
+        "target": "api::article.article"
+      }
+    }
+  }
+  

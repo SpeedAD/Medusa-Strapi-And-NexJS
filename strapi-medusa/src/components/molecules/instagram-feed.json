@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_molecules_instagram_feeds",
+  "info": {
+    "displayName": "instagram_feed",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "instagram": {
+      "type": "richtext"
+    }
+  }
+}

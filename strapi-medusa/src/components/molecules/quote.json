@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_molecules_quotes",
+  "info": {
+    "displayName": "quote",
+    "icon": "quote-left"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "richtext"
+    }
+  }
+}

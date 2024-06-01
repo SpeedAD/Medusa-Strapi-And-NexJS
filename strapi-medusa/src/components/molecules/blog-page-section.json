@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_molecules_blog_page_sections",
+  "info": {
+    "displayName": "Blog Page Section",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    },
+    "logoTagline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.logo-tagline"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

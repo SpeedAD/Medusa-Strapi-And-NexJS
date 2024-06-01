@@ -1,0 +1,34 @@
+{
+  "name": "strapi-medusa",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.13.6",
+    "@strapi/plugin-users-permissions": "4.13.6",
+    "@strapi/plugin-i18n": "4.13.6",
+    "pg": "8.8.0",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
+    "@strapi/provider-upload-s3-cloudfront": "file:providers/upload-s3-cloudfront",
+    "detect-svg-scripts": "^1.0.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "63acdcbb-4091-40d5-bd8e-e2be945f73aa",
+    "template": "shahednasser/strapi-medusa-template"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
